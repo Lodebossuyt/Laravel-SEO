@@ -152,4 +152,19 @@ class SEO {
 
         return $this;
     }
+
+    public function toArray()
+    {
+        return [
+            'title' => $this->title,
+            'description' => $this->description,
+            'keywords' => $this->keywords,
+            'author' => $this->author,
+            'robots' => $this->robots,
+            'set_canonical_url' => $this->setCanonicalUrl,
+            'set_og_tags' => $this->setOgTags,
+            'set_twitter_cards' => $this->setTwitterCards,
+            'image' => $this->image,
+        ];
+    }
 }
