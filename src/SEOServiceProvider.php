@@ -2,6 +2,7 @@
 
 namespace Lodeb\SEO;
 
+use Lodeb\SEO\Services\SEO;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
 
@@ -20,7 +21,7 @@ class SEOServiceProvider extends PackageServiceProvider
     public function boot(): void
     {
         parent::boot();
-        
+
         $this->app->singleton(SEO::class, function ($app) {
             return new SEO();
         });

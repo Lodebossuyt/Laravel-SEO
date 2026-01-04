@@ -15,4 +15,10 @@ return [
     'default_title' => 'My Awesome Website',
     'default_description' => 'This is the best website ever built with Laravel SEO package.',
     'default_keywords' => ['laravel', 'seo', 'package', 'awesome'],
+    'default_author' => 'Your Name',
+    'default_robots' => 'index, follow',
+
+    'set_canonical_url' => true,
+    'set_og_tags' => true,
+    'set_twitter_cards' => true,
 ];

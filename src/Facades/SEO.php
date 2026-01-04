@@ -11,6 +11,6 @@ class SEO extends Facade
 {
     protected static function getFacadeAccessor(): string
     {
-        return \Lodeb\SEO\SEO::class;
+        return \Lodeb\SEO\Services\SEO::class;
     }
 }
